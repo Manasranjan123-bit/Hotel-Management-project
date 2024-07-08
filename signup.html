@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="loginpage.css">
+</head>
+<script>
+    function validate_form() {
+        let name = document.form.name.value;
+        if (name.trim() === "") {
+            alert("Name can't be blank");
+            return false;
+        }
+
+        let x = document.form.Email.value;
+        let atpos = x.indexOf("@");
+        let dotpos = x.lastIndexOf(".");
+        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+            alert("Please enter a valid email address");
+            return false;
+        }
+
+        let fpass = document.form.password1.value;
+        let spass = document.form.password2.value;
+        if (fpass === spass) {
+            return true;
+        } else {
+            alert("Passwords must match");
+            return false;
+        }
+    }
+</script>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">Nav logo</div>
+        <div class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="signin.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </div>
+    </nav>
+    <div class="form-container">
+        <form class="form">
+            <h2>Signup</h2>
+            Enter User Name<input type="text" class="input"name="name" placeholder="Username" required><br><br>
+            Enter valid Email<input type="email" class="input" name="Email"placeholder="Email" required><br><br>
+           Enter Password <input type="password" class="input"name="password1" placeholder="Password" required><br><br>
+           confirm Password<input type="password" class="input"name="password2" placeholder="Confirm Password" required><br><br>
+            <button type="submit" class="button">Signup</button><br>
+            <h5>if already have an account<a href="signin.html"> Login</a></h5>
+        </form>
+    </div>
+</body>
+</html>

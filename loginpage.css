@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(interior-the-maldives-pool-the-hotel-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d4f1f4;
+}
+
+.nav-logo {
+    font-size: 1.5em;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #e2e2e2;
+}
+
+.input {
+    padding: 10px;
+    margin: 0 10px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.data, .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fceabb;
+    border: 1px solid #ccc;
+    height: 150px;
+}
+
+.data {
+    background-color: #ffe7c9;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
